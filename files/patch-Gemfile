@@ -1,0 +1,12 @@
+--- Gemfile.orig	2024-02-29 13:49:43.459684000 +0100
++++ Gemfile	2024-02-29 13:49:49.075419000 +0100
+@@ -25,9 +25,6 @@ source 'https://rubygems.org' do
+   gem 'ox' # Dav4Rack
+   gem 'rake' unless Dir.exist?(File.expand_path('../../redmine_dashboard', __FILE__))
+   gem 'uuidtools'
+-  group :xapian do
+-    gem 'xapian-ruby'
+-  end
+   gem 'zip-zip' unless Dir.exist?(File.expand_path('../../vault', __FILE__))
+ 
+   # Redmine extensions
